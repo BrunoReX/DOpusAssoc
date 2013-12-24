@@ -1,0 +1,65 @@
+object FrmMain: TFrmMain
+  AnchorSideLeft.Side = asrBottom
+  AnchorSideTop.Side = asrBottom
+  AnchorSideRight.Side = asrBottom
+  AnchorSideBottom.Side = asrBottom
+  Left = 306
+  Height = 245
+  Top = 147
+  Width = 326
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Directory Opus - Associate Archives'
+  ClientHeight = 245
+  ClientWidth = 326
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '1.0.14.0'
+  Visible = True
+  object btnSave: TButton
+    Left = 225
+    Height = 25
+    Top = 208
+    Width = 86
+    Caption = 'Save'
+    OnClick = btnSaveClick
+    TabOrder = 0
+  end
+  object btnCheckAll: TButton
+    Left = 15
+    Height = 25
+    Top = 208
+    Width = 86
+    Caption = 'Check All'
+    OnClick = btnCheckAllClick
+    TabOrder = 1
+  end
+  object btnCheckNone: TButton
+    Left = 120
+    Height = 25
+    Top = 208
+    Width = 86
+    Caption = 'Check None'
+    OnClick = btnCheckNoneClick
+    TabOrder = 2
+  end
+  object cgExtensions: TCheckGroup
+    Left = 14
+    Height = 184
+    Top = 8
+    Width = 298
+    AutoFill = False
+    Caption = 'Extensions'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.HorizontalSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsHomogenousChildResize
+    ChildSizing.ShrinkVertical = crsHomogenousChildResize
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 5
+    Columns = 5
+    TabOrder = 3
+  end
+end
